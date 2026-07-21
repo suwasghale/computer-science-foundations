@@ -75,6 +75,16 @@ class Solution:
             seen.add(num)
             
         return False 
+
+
+# ==========================================================
+# Pythonic Solution (len(set(nums))
+# ==========================================================
+
+
+def contains_duplicate_pythonic(nums: List[int]) -> bool:
+    return len(nums) != len(set(nums))
+
     
 if __name__ == "__main__":
 
@@ -96,3 +106,11 @@ if __name__ == "__main__":
     print(solution.containsDuplicate(nums1))
     print(solution.containsDuplicate(nums2))
     print(solution.containsDuplicate(nums3))
+    
+    print()
+    
+    print("=== Pythonic Solution (len(set(nums))) ===")
+    
+    print(contains_duplicate_pythonic(nums1))
+    print(contains_duplicate_pythonic(nums2))
+    print(contains_duplicate_pythonic(nums3))
