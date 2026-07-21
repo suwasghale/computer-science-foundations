@@ -30,7 +30,6 @@ target = 9
 # ==========================================================
 
 
-
 def two_sum_brute_force(nums: List[int], target: int) -> List[int]:
     for i in range(len(nums)):
         for j in range(i + 1, len(nums)):
@@ -74,6 +73,12 @@ class Solution:
                 return [seen[complement], index]
             
             seen[num] = index 
+
+
+# ==========================================================
+# Test Cases
+# ==========================================================
+
 
 if __name__ == "__main__":
     solution = Solution()

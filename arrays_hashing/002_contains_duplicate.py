@@ -85,7 +85,12 @@ class Solution:
 def contains_duplicate_pythonic(nums: List[int]) -> bool:
     return len(nums) != len(set(nums))
 
-    
+
+# ==========================================================
+# Test Cases
+# ==========================================================
+
+  
 if __name__ == "__main__":
 
     nums1 = [1, 2, 3, 1]
