@@ -56,6 +56,37 @@ def contains_duplicate_ii_brute_force(nums: List[int], k:int)-> bool:
 
 
 # ==========================================================
+# Optimized Solution (Hash Map)
+# ==========================================================
+
+class Solution:
+    def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+        """
+        Store the latest index of each number.
+
+        Algorithm:
+        1. Create an empty hash map.
+        2. Iterate through the array.
+        3. If the current number already exists,
+           calculate the distance.
+        4. If distance <= k, return True.
+        5. Update the latest index.
+        """
+        seen: dict[int, int] = {}
+        
+        for index, num in enumerate(nums):
+            if num in seen: 
+                distance = index - seen[num]
+                if distance <= k:
+                    return True 
+                
+            # Update to the latest occurrence
+            seen[num] = index 
+        
+        return False 
+
+
+# ==========================================================
 # Test Cases
 # ==========================================================
 
@@ -79,3 +110,23 @@ if __name__ == "__main__":
     print(contains_duplicate_ii_brute_force(nums3, k))
     print()
     print(contains_duplicate_ii_brute_force(nums4, k))
+    print()
+    
+    print("=== Optimized Solution (Hash Map) ===")
+
+    solution = Solution()
+
+    print(solution.containsNearbyDuplicate(nums1, k1))
+    print(solution.containsNearbyDuplicate(nums2, k2))
+    print(solution.containsNearbyDuplicate(nums3, k))
+    print(solution.containsNearbyDuplicate(nums4, k))
+
+
+"""
+Key Takeaways
+-------------
+- Use a Hash Set when only existence matters.
+- Use a Hash Map when additional information is needed.
+- Always store the latest index because it minimizes the distance
+  to future occurrences.
+"""
