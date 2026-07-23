@@ -17,11 +17,24 @@ Time Complexity:
 Space Complexity:
     O(n)
 
+Use Cases:
+    • E-commerce:
+        Find two products whose prices equal a customer's budget.
+
+    • Banking:
+        Detect two transactions that sum to a target amount.
+
+    • Finance:
+        Identify two investments reaching a desired portfolio value.
+
+    • Gaming:
+        Find two items whose combined score unlocks an achievement.
+
 Key Idea:
     Instead of searching every pair, store previously seen numbers in a hash map.
     For each current number, compute the complement (target - num) and check
     whether it has already been seen.
-
+    
 """
 from typing import List
 

@@ -33,6 +33,31 @@ Pattern Recognition:
     ✓ Need perfect reconstruction?
         → Length + Delimiter + Data
 
+Use Cases:
+    • Network Communication:
+        Serialize data before transmission.
+
+    • REST APIs:
+        Convert objects into transferable formats.
+
+    • Databases:
+        Store structured data as strings.
+
+    • File Formats:
+        JSON, XML, YAML serialization.
+
+    • Message Queues:
+        Kafka, RabbitMQ payload serialization.
+
+    • Distributed Systems:
+        Exchange structured messages between services.
+
+    • Multiplayer Games:
+        Serialize player state before sending over the network.
+
+    • Remote Procedure Calls:
+        gRPC and Protocol Buffers.
+
 Key Idea:
     Instead of searching for where a string ends,
     store how many characters belong to that string.
@@ -55,15 +80,7 @@ Key Idea:
 
 Hash Map:
     Not Required
-
-Use Case:
-    • Network communication
-    • REST APIs
-    • JSON serialization
-    • Database storage
-    • File formats
-    • Message queues (Kafka, RabbitMQ)
-    • Distributed systems
+        
 """
 
 from typing import List

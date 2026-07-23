@@ -26,12 +26,26 @@ Space Complexity:
     Bucket Sort:
         O(n)
 
+Use Cases:
+    • Search Engines:
+        Find the most searched keywords.
+
+    • Social Media:
+        Display trending hashtags.
+
+    • E-commerce:
+        Recommend best-selling products.
+
+    • Text Analytics:
+        Find the most common words in documents.
+
 Key Idea:
     1. Count the frequency of every number using a hash map.
     2. Instead of sorting the frequencies, place each number into a bucket (list of list)
        corresponding to its frequency.
     3. Traverse the buckets from highest frequency to lowest until k elements
        have been collected.
+        
 """
 
 from typing import List

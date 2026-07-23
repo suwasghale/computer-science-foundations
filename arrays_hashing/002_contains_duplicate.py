@@ -15,6 +15,19 @@ Space Complexity:
     Brute Force: O(1)
     Optimized: O(n)
 
+Use Cases:
+    • Database:
+        Detect duplicate user IDs before insertion.
+
+    • Registration Systems:
+        Prevent duplicate email or username registrations.
+
+    • Inventory Management:
+        Detect repeated product codes.
+
+    • Data Cleaning:
+        Remove duplicate records before analysis.
+
 Key Idea:
     We only care whether a number has already appeared.
     Since no extra information (such as index or frequency) is needed,

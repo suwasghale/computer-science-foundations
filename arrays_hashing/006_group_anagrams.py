@@ -36,6 +36,19 @@ Pattern Recognition:
     ✓ Need faster than sorting?
         → Frequency Tuple
 
+Use Cases:
+    • Dictionary Applications:
+        Group words sharing the same letters.
+
+    • Word Games:
+        Find all possible anagram groups.
+
+    • NLP (Natural Language Processing):
+        Cluster words with identical character composition.
+
+    • Search Systems:
+        Suggest equivalent word rearrangements.
+
 Key Idea:
     Every anagram must generate the same signature.
 
@@ -52,6 +65,7 @@ Key Idea:
 
     Once every word has the same signature,
     simply group them inside a hash map.
+    
 """
 
 from typing import List

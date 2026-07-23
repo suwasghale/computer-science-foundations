@@ -16,11 +16,24 @@ Space Complexity:
     Brute Force: O(1)
     Optimized: O(n)
 
+Use Cases:
+    • Fraud Detection:
+        Detect repeated transactions occurring within a short time window.
+
+    • Log Analysis:
+        Find repeated events occurring close together.
+
+    • Sensor Monitoring:
+        Detect repeated readings within recent measurements.
+
+    • Gaming:
+        Detect repeated player actions within a short interval.
+
 Key Idea:
     Unlike Contains Duplicate, we must also know where the previous
     occurrence appeared. Therefore, a Hash Map is required to store
     the latest index of each number.
-
+           
 """
 
 from typing import List
