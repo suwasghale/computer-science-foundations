@@ -4,6 +4,10 @@ https://leetcode.com/problems/group-anagrams/
 
 Pattern:
     Arrays & Hashing
+    
+# Hash Map
+    # Key   -> Signature (Sorted String / Frequency Tuple)
+    # Value -> List of Anagrams
 
 Difficulty:
     Medium

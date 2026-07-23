@@ -5,6 +5,10 @@ https://leetcode.com/problems/top-k-frequent-elements/description/
 Pattern:
     Arrays & Hashing
 
+# Hash Map
+    # Key   -> Number
+    # Value -> Frequency
+
 Difficulty:
     Medium
 

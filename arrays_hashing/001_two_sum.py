@@ -4,6 +4,10 @@ Leetcode #1. Two Sum (https://leetcode.com/problems/two-sum/description/)
 Pattern: 
     Arrays & Hashing
     
+# Hash Map
+    # Key   -> Number
+    # Value -> Index
+    
 Difficulty: 
     Easy
     
